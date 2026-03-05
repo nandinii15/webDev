@@ -1,0 +1,136 @@
+/* SIMPLE PINK LAVENDER THEME */
+
+body{
+    background-color:#fdf0f7;
+    font-family:Georgia, "Times New Roman", serif;
+    color:#4a2c40;
+    margin:0;
+    padding:40px;
+}
+
+
+/* HEADING */
+
+h2{
+    text-align:center;
+    color:#7a3a7a;
+}
+
+
+/* TABLE */
+
+table{
+    width:80%;
+    margin:auto;
+    border-collapse:collapse;
+    background-color:#fff7fb;
+    border:2px solid #c79ac7;
+}
+
+
+/* HEADER */
+
+th{
+    background-color:#e8c8f0;
+    color:#4a2c54;
+    padding:12px;
+    border:1px solid #c79ac7;
+}
+
+
+/* CELLS */
+
+td{
+    padding:10px;
+    text-align:center;
+    border:1px solid #e3c6e7;
+}
+
+
+/* ROW COLORS */
+
+tr:nth-child(even){
+    background-color:#f9e6f7;
+}
+
+tr:hover{
+    background-color:#f2d8f4;
+}
+
+
+/* INPUT BOX */
+
+input[type="text"]{
+    background-color:#fff4fb;
+    border:1px solid #c79ac7;
+    padding:4px;
+    font-family:Georgia, serif;
+}
+
+
+/* CHECKBOX */
+
+input[type="checkbox"]{
+    transform:scale(1.1);
+}
+
+
+/* TASK LINKS */
+
+a{
+    display:inline-block;
+    background-color:#f6d6f9;
+    color:#6d2f75;
+    padding:6px 12px;
+    border-radius:5px;
+    border:1px solid #c79ac7;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    background-color:#e8bdf0;
+}
+
+
+/* FOOTER */
+
+footer{
+    margin-top:50px;
+    background-color:#f3d9f7;
+    padding:25px;
+    border-top:2px solid #c79ac7;
+}
+
+
+/* PROFILE IMAGE */
+
+footer img{
+    border-radius:50%;
+    border:2px solid #c79ac7;
+}
+
+
+/* FOOTER TEXT */
+
+footer p{
+    margin:6px;
+}
+
+footer h3{
+    color:#6b3d73;
+}
+
+
+/* HR */
+
+hr{
+    border:1px solid #c79ac7;
+}
+
+
+/* TASK PAGE CONTENT */
+
+p{
+    font-size:16px;
+}
