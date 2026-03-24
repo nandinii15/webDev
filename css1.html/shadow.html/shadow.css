@@ -1,0 +1,12 @@
+#shadowsample
+{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border: 1px solid black;
+    box-shadow:2px 2px 2px 10px grey ;
+}
+
+#textsample{
+    text-shadow: 0.5px 0.5px 1px red;
+}
