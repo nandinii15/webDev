@@ -1,0 +1,30 @@
+body{
+font-family: Arial, sans-serif;
+background:#dfe5e8;
+}
+
+form{
+width:900px;
+margin:40px auto;
+background:#a8bbd4;
+padding:40px;
+border-radius:15px;
+}
+
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+table{
+width:100%;
+}
+
+td{
+padding:10px;
+font-size:14px;
+vertical-align:top;
+}
+
+input[type="text"],
+input[type="email"],
