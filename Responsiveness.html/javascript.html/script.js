@@ -10,9 +10,14 @@ var x=20;
 const pi =3.14;
 pi=41;
 
-console.log("task complete")
+console.log("task complete" )
 
 let x=10;
+
+
+
+
+
 let y="10";
 
 console.log(x==y);
