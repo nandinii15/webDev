@@ -12,7 +12,10 @@ let a=[24, 58, 33,86,96,12,53,23,23,32,100]
     console.log(a[i]);
 }
 
-let i=0;
-while (i<10); {
-console.log(a[i ])
+let j=0;
+do
+{
+    console.log(a[j]);
+    j++;
 }
+while(j<10);
