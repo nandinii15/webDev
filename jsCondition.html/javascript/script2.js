@@ -1,0 +1,30 @@
+"use strict";
+
+
+let a;
+let b;
+let c;
+
+a=10;
+console.log(a);
+console.log(b);
+console.log(c);
+
+b=15;
+console.log(a);
+console.log(b);
+console.log(c);
+
+c=20;
+console.log(a);
+console.log(b);
+console.log(c);
+
+abc();
+function abc(){
+    console.log("i am a function")
+}
+function submit(){
+    console.log("submit button clicked")
+}
+
