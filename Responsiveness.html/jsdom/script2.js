@@ -121,3 +121,23 @@ console.log(arr.slice(7));
 
 let ab ="this is web dev class";
 console.log(ab.split(" "));
+
+let str= "this is string"
+
+// split
+// charAt
+console.log(str.charAt(5));
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+let a= 3.14;
+console.log(a);
+console.log(typeof a);
+let b= a.toString();
+console.log(b);
+
+let c=  3.145756546786546685465486;
+console.log(c.toFixed(5));
+
+let fullName = "Nandini";
+console.log("my name is $(nandini)");
