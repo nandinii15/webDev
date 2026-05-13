@@ -6,12 +6,7 @@ function Calculate(data) {
   }
 
   if (data === "C") {
-    // const eq = equation.innerText;
-
-    // let newEQ = eq.slice(0, -1);
-
-    // equation.innerText = newEQ;
-
+    
     equation.innerText = equation.innerText.slice(0, -1);
     return;
   }
