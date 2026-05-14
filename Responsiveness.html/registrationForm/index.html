@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div
+      id="classContainer"
+      class="container shadow border align-items-center"
+    >
+      <div class="d-flex justify-content-center p-3">
+        <h1>Coaching Institute Registration Form</h1>
+      </div>
+
+      <!-- Personal Information -->
+      Personal Information
+
+      <div class="container shadow border p-0">
+        <div class="d-flex p-2">
+          Enter Your Full Name :
+
+          <input
+            type="text"
+            id="FullName"
+            placeholder="Enter Your Name"
+          />
+
+          <span id="NameError" class="error"></span>
+        </div>
+
+        <div class="d-flex p-2">
+          Enter your Contact Number:
+
+          <input
+            type="number"
+            id="phone"
+            placeholder="Enter Your Contact No."
+            class="d-flex justify-content-center"
+          />
+
+          <span id="PhoneError" class="error"></span>
+        </div>
+
+        <div class="d-flex p-2">
+          Enter Your Email:
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            class="d-flex justify-content-center"
+          />
+
+          <span id="EmailError" class="error"></span>
+        </div>
+
+        <div class="d-flex p-2">
+          Enter Your Date Of Birth :
+
+          <input
+            type="date"
+            id="date"
+            placeholder="Enter Your D.O.B"
+            class="d-flex justify-content-center"
+          />
+
+          <span id="DateError" class="error"></span>
+        </div>
+
+        <div class="d-flex p-2 gap-3">
+          Enter Your Gender:
+
+          <div class="form-check mb-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              id="genderMale"
+              value="male"
+              checked
+            />
+
+            <label
+              class="form-check-input-label"
+              for="genderMale"
+            >
+              Male
+            </label>
+          </div>
+
+          <div class="d-flex gap-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              id="genderFemale"
+              value="female"
+            />
+
+            <label
+              class="form-check-input-label d-flex gap-3"
+              for="genderFemale"
+            >
+              Female
+            </label>
+          </div>
+
+          <div class="form-check mb-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              id="genderOther"
+              value="other"
+            />
+
+            <label
+              class="form-check-input-label"
+              for="genderOther"
+            >
+              Other / Prefer not to say
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Academic Details -->
+      Academic Details:
+
+      <div class="container shadow border p-0">
+        <div class="mb-3 p-3">
+          Please select your qualification:
+
+          <label
+            for="qualification"
+            class="form-label mb-3"
+          ></label>
+
+          <select
+            class="form-control"
+            id="qualification"
+            name="qualification"
+            required
+          >
+            <option value="" selected disabled>
+              Select your qualification
+            </option>
+
+            <option value="10th">10th</option>
+            <option value="12th">12th</option>
+            <option value="diploma">Diploma</option>
+            <option value="graduate">Graduate</option>
+            <option value="postgraduate">Postgraduate</option>
+            <option value="phd">PhD</option>
+          </select>
+        </div>
+
+        <div class="d-flex p-2">
+          <div class="form-floating mb-3">
+            Last Qualification Grade/Percentage:
+
+            <input
+              type="text"
+              class="form-floating border"
+              id="lastQualificationGrade"
+              placeholder="Enter Percentage"
+              pattern="^([0-9]|[1-9][0-9]|100)$|^[A-Fa-f]$"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Course Information -->
+      Course Information:
+
+      <div class="container shadow border p-0">
+        <div class="mb-3 p-3">
+          Please select your Preferred Course :
+
+          <label
+            for="course"
+            class="form-label mb-3"
+          ></label>
+
+          <select
+            class="form-control"
+            id="qualification"
+            name="qualification"
+            required
+          >
+            <option value="" selected disabled>
+              Preferred Course:
+            </option>
+
+            <option value="jee">IIT-JEE</option>
+            <option value="neet">NEET</option>
+            <option value="be">Banking Exams</option>
+            <option value="upsc">UPSC</option>
+          </select>
+        </div>
+
+        <div class="d-flex gap-2 me-4 mb-2 p-3 mt-3">
+          Please select your Batch Timing Preference :
+
+          <div class="form-check d-flex gap-2 me-4 mb-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="batchTiming"
+              id="mrn"
+              value="morning"
+            />
+
+            <label
+              class="form-check-input-label"
+              for="mrn"
+            >
+              Morning
+            </label>
+          </div>
+
+          <div class="form-check d-flex gap-2 me-4 mb-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="batchTiming"
+              id="aft"
+              value="aft"
+            />
+
+            <label
+              class="form-check-input-label"
+              for="aft"
+            >
+              Afternoon
+            </label>
+          </div>
+
+          <div class="form-check d-flex gap-2 me-4 mb-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="batchTiming"
+              id="eve"
+              value="eve"
+            />
+
+            <label
+              class="form-check-input-label"
+              for="eve"
+            >
+              Evening
+            </label>
+          </div>
+
+          <div class="form-check d-flex gap-2 me-4 mb-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="batchTiming"
+              id="Weekend"
+              value="Weekend"
+            />
+
+            <label
+              class="form-check-input-label"
+              for="Weekend"
+            >
+              Weekend
+            </label>
+          </div>
+        </div>
+      </div>
+
+      Address:
+      <div class="container border shadow">
+        <div class="p-3">
+            <label for="resArea" id="resArea">Residential Area</label>
+            <textarea name="resArea" id="resArea" class="d-flex p-4"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
