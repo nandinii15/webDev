@@ -294,14 +294,78 @@
           </div>
         </div>
       </div>
+      <br>
 
       Address:
-      <div class="container border shadow">
+      <div class="container border shadow d-grid align-items-center">
         <div class="p-3">
-            <label for="resArea" id="resArea">Residential Area</label>
-            <textarea name="resArea" id="resArea" class="d-flex p-4"></textarea>
+            <label for="resArea" id="resArea" >Residential Area: </label>
+            <textarea name="resArea" id="resArea" class="d-flex p-2 w-50" placeholder="Enter your Residential area"></textarea>
+        </div>
+
+        <div class="p-3 d-flex">
+              <label for="city" id="city" name="city">City: </label> 
+               <input type="text" id="city" placeholder="Enter your City Name"> 
+        </div>
+        <div class="p-3 d-flex">
+              <label for="pcode" id="pcode" name="pcode">Pin Code: </label> 
+               <input type="text" id="pcode" placeholder="Enter Pin Code"> 
         </div>
       </div>
+      <br>
+      Guardian Details:
+      <div class="container shadow border p-0">
+        <div class="d-flex p-2">
+          Guardian’s Full Name: :
+
+          <input
+            type="text"
+            id="FullName"
+            placeholder="Enter Your Name"
+          />
+
+          <span id="NameError" class="error"></span>
+        </div>
+        <div class="d-flex p-2">
+          Guardian’s Contact Number :
+
+          <input
+            type="number"
+            id="GNumber"
+            placeholder="Contact Number"
+          />
+
+          <span id="NameError" class="error"></span>
+        </div>
+        </div>
+        <br>
+         Additional Information:
+        <div class="container shadow border p-2">
+          <div class="col-md-6 mb-3 ">
+                <label for="hearAboutUs" class="form-label">How did you hear about us? <span class="text-danger">*</span></label>
+                <select class="form-select" id="hearAboutUs" name="hearAboutUs" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option value="friends">Friends</option>
+                    <option value="online_ad">Online Ad</option>
+                    <option value="newspaper">Newspaper</option>
+                    <option value="social_media">Social Media</option>
+                    <option value="other">Other</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select an option.
+                </div>
+            </div>
+        
+
+        <div class="row -3 ">
+            
+            <div class="col-md-12 mb-3 -3">
+                <label for="specialRequirements" class="form-label">Special Requirements <span class="text-muted">(Optional)</span></label>
+                <textarea class="form-control" id="specialRequirements" name="specialRequirements" rows="3" placeholder="Specify any additional needs or preferences..."></textarea>
+            </div>
+        </div>
+        </div>
+        
     </div>
 
     <script
@@ -313,3 +377,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+             
