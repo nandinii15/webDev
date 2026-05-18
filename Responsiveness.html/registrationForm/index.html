@@ -4,377 +4,348 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+    <title>Coaching Registration Form</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
     />
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-
-    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div
-      id="classContainer"
-      class="container shadow border align-items-center"
-    >
-      <div class="d-flex justify-content-center p-3">
-        <h1>Coaching Institute Registration Form</h1>
-      </div>
-
-      <!-- Personal Information -->
-      Personal Information
-
-      <div class="container shadow border p-0">
-        <div class="d-flex p-2">
-          Enter Your Full Name :
-
-          <input
-            type="text"
-            id="FullName"
-            placeholder="Enter Your Name"
-          />
-
-          <span id="NameError" class="error"></span>
+    <div class="container py-5">
+      <div class="card shadow-lg border-0 main-card">
+        <div class="header-box text-center">
+          <h1>
+            <i class="bi bi-mortarboard-fill"></i>
+            Coaching Institute Registration
+          </h1>
+          <p class="mb-0 mt-2">Fill in your details to complete registration</p>
         </div>
 
-        <div class="d-flex p-2">
-          Enter your Contact Number:
+        <div class="card-body p-4 p-md-5">
+          <div class="form-section">
+            <h3 class="section-title">
+              <i class="bi bi-person-circle"></i>
+              Personal Information
+            </h3>
+            <br />
+            <div class="row g-4 container border shadow rounded-3 py-4">
+              <div class="col-md-6">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Enter your full name"
+                />
+              </div>
 
-          <input
-            type="number"
-            id="phone"
-            placeholder="Enter Your Contact No."
-            class="d-flex justify-content-center"
-          />
+              <div class="col-md-6">
+                <label class="form-label">Contact Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter contact number"
+                />
+              </div>
 
-          <span id="PhoneError" class="error"></span>
-        </div>
+              <div class="col-md-6">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
 
-        <div class="d-flex p-2">
-          Enter Your Email:
+              <div class="col-md-6">
+                <label class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" />
+              </div>
 
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter Your Email"
-            class="d-flex justify-content-center"
-          />
+              <div class="col-12">
+                <label class="form-label d-block">Gender</label>
 
-          <span id="EmailError" class="error"></span>
-        </div>
+                <div class="d-flex flex-wrap gap-4">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="male"
+                    />
+                    <label class="form-check-label" for="male"> Male </label>
+                  </div>
 
-        <div class="d-flex p-2">
-          Enter Your Date Of Birth :
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="female"
+                    />
+                    <label class="form-check-label" for="female">
+                      Female
+                    </label>
+                  </div>
 
-          <input
-            type="date"
-            id="date"
-            placeholder="Enter Your D.O.B"
-            class="d-flex justify-content-center"
-          />
-
-          <span id="DateError" class="error"></span>
-        </div>
-
-        <div class="d-flex p-2 gap-3">
-          Enter Your Gender:
-
-          <div class="form-check mb-2">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="gender"
-              id="genderMale"
-              value="male"
-              checked
-            />
-
-            <label
-              class="form-check-input-label"
-              for="genderMale"
-            >
-              Male
-            </label>
-          </div>
-
-          <div class="d-flex gap-3">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="gender"
-              id="genderFemale"
-              value="female"
-            />
-
-            <label
-              class="form-check-input-label d-flex gap-3"
-              for="genderFemale"
-            >
-              Female
-            </label>
-          </div>
-
-          <div class="form-check mb-3">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="gender"
-              id="genderOther"
-              value="other"
-            />
-
-            <label
-              class="form-check-input-label"
-              for="genderOther"
-            >
-              Other / Prefer not to say
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <!-- Academic Details -->
-      Academic Details:
-
-      <div class="container shadow border p-0">
-        <div class="mb-3 p-3">
-          Please select your qualification:
-
-          <label
-            for="qualification"
-            class="form-label mb-3"
-          ></label>
-
-          <select
-            class="form-control"
-            id="qualification"
-            name="qualification"
-            required
-          >
-            <option value="" selected disabled>
-              Select your qualification
-            </option>
-
-            <option value="10th">10th</option>
-            <option value="12th">12th</option>
-            <option value="diploma">Diploma</option>
-            <option value="graduate">Graduate</option>
-            <option value="postgraduate">Postgraduate</option>
-            <option value="phd">PhD</option>
-          </select>
-        </div>
-
-        <div class="d-flex p-2">
-          <div class="form-floating mb-3">
-            Last Qualification Grade/Percentage:
-
-            <input
-              type="text"
-              class="form-floating border"
-              id="lastQualificationGrade"
-              placeholder="Enter Percentage"
-              pattern="^([0-9]|[1-9][0-9]|100)$|^[A-Fa-f]$"
-              required
-            />
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <!-- Course Information -->
-      Course Information:
-
-      <div class="container shadow border p-0">
-        <div class="mb-3 p-3">
-          Please select your Preferred Course :
-
-          <label
-            for="course"
-            class="form-label mb-3"
-          ></label>
-
-          <select
-            class="form-control"
-            id="qualification"
-            name="qualification"
-            required
-          >
-            <option value="" selected disabled>
-              Preferred Course:
-            </option>
-
-            <option value="jee">IIT-JEE</option>
-            <option value="neet">NEET</option>
-            <option value="be">Banking Exams</option>
-            <option value="upsc">UPSC</option>
-          </select>
-        </div>
-
-        <div class="d-flex gap-2 me-4 mb-2 p-3 mt-3">
-          Please select your Batch Timing Preference :
-
-          <div class="form-check d-flex gap-2 me-4 mb-2">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="batchTiming"
-              id="mrn"
-              value="morning"
-            />
-
-            <label
-              class="form-check-input-label"
-              for="mrn"
-            >
-              Morning
-            </label>
-          </div>
-
-          <div class="form-check d-flex gap-2 me-4 mb-2">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="batchTiming"
-              id="aft"
-              value="aft"
-            />
-
-            <label
-              class="form-check-input-label"
-              for="aft"
-            >
-              Afternoon
-            </label>
-          </div>
-
-          <div class="form-check d-flex gap-2 me-4 mb-2">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="batchTiming"
-              id="eve"
-              value="eve"
-            />
-
-            <label
-              class="form-check-input-label"
-              for="eve"
-            >
-              Evening
-            </label>
-          </div>
-
-          <div class="form-check d-flex gap-2 me-4 mb-2">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="batchTiming"
-              id="Weekend"
-              value="Weekend"
-            />
-
-            <label
-              class="form-check-input-label"
-              for="Weekend"
-            >
-              Weekend
-            </label>
-          </div>
-        </div>
-      </div>
-      <br>
-
-      Address:
-      <div class="container border shadow d-grid align-items-center">
-        <div class="p-3">
-            <label for="resArea" id="resArea" >Residential Area: </label>
-            <textarea name="resArea" id="resArea" class="d-flex p-2 w-50" placeholder="Enter your Residential area"></textarea>
-        </div>
-
-        <div class="p-3 d-flex">
-              <label for="city" id="city" name="city">City: </label> 
-               <input type="text" id="city" placeholder="Enter your City Name"> 
-        </div>
-        <div class="p-3 d-flex">
-              <label for="pcode" id="pcode" name="pcode">Pin Code: </label> 
-               <input type="text" id="pcode" placeholder="Enter Pin Code"> 
-        </div>
-      </div>
-      <br>
-      Guardian Details:
-      <div class="container shadow border p-0">
-        <div class="d-flex p-2">
-          Guardian’s Full Name: :
-
-          <input
-            type="text"
-            id="FullName"
-            placeholder="Enter Your Name"
-          />
-
-          <span id="NameError" class="error"></span>
-        </div>
-        <div class="d-flex p-2">
-          Guardian’s Contact Number :
-
-          <input
-            type="number"
-            id="GNumber"
-            placeholder="Contact Number"
-          />
-
-          <span id="NameError" class="error"></span>
-        </div>
-        </div>
-        <br>
-         Additional Information:
-        <div class="container shadow border p-2">
-          <div class="col-md-6 mb-3 ">
-                <label for="hearAboutUs" class="form-label">How did you hear about us? <span class="text-danger">*</span></label>
-                <select class="form-select" id="hearAboutUs" name="hearAboutUs" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option value="friends">Friends</option>
-                    <option value="online_ad">Online Ad</option>
-                    <option value="newspaper">Newspaper</option>
-                    <option value="social_media">Social Media</option>
-                    <option value="other">Other</option>
-                </select>
-                <div class="invalid-feedback">
-                    Please select an option.
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="other"
+                    />
+                    <label class="form-check-label" for="other"> Other </label>
+                  </div>
                 </div>
+              </div>
             </div>
-        
+          </div>
+          <br />
+          <div class="form-section">
+            <h3 class="section-title">
+              <i class="bi bi-journal-bookmark-fill"></i>
+              Academic Details
+            </h3>
+            <br />
+            <div class="row g-4 container shadow border rounded-3 py-4">
+              <div class="col-md-6">
+                <label class="form-label">Qualification</label>
 
-        <div class="row -3 ">
-            
-            <div class="col-md-12 mb-3 -3">
-                <label for="specialRequirements" class="form-label">Special Requirements <span class="text-muted">(Optional)</span></label>
-                <textarea class="form-control" id="specialRequirements" name="specialRequirements" rows="3" placeholder="Specify any additional needs or preferences..."></textarea>
+                <select class="form-select" id="qualification">
+                  <option selected disabled>Select qualification</option>
+
+                  <option>10th</option>
+                  <option>12th</option>
+                  <option>Diploma</option>
+                  <option>Graduate</option>
+                  <option>Postgraduate</option>
+                  <option>PhD</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">
+                  Last Qualification Percentage / Grade
+                </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter percentage or grade"
+                />
+              </div>
             </div>
+          </div>
+          <br />
+
+          <div class="form-section">
+            <h4 class="section-title">
+              <i class="bi bi-book-half"></i>
+              Course Information
+            </h4>
+            <br />
+            <div class="row g-4 container shadow border rounded-3">
+              <div class="col-md-6">
+                <label class="form-label">Preferred Course</label>
+
+                <select class="form-select">
+                  <option selected disabled>Select course</option>
+
+                  <option>IIT-JEE</option>
+                  <option>NEET</option>
+                  <option>Banking Exams</option>
+                  <option>UPSC</option>
+                </select>
+              </div>
+
+              <div class="col-md-6 py-4">
+                <label class="form-label d-block">
+                  Batch Timing Preference
+                </label>
+
+                <div class="d-flex flex-wrap gap-3 mt-2">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="batch"
+                      id="morning"
+                    />
+
+                    <label class="form-check-label" for="morning">
+                      Morning
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="batch"
+                      id="afternoon"
+                    />
+
+                    <label class="form-check-label" for="afternoon">
+                      Afternoon
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="batch"
+                      id="evening"
+                    />
+
+                    <label class="form-check-label" for="evening">
+                      Evening
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="batch"
+                      id="weekend"
+                    />
+
+                    <label class="form-check-label" for="weekend">
+                      Weekend
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <div class="form-section">
+            <h4 class="section-title">
+              <i class="bi bi-geo-alt-fill"></i>
+              Address
+            </h4>
+            <br />
+            <div class="row g-4 container shadow border rounded-3 py-4">
+              <div class="col-12">
+                <label class="form-label">Residential Address</label>
+
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Enter your address"
+                ></textarea>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">City</label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter city"
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Pin Code</label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter pin code"
+                />
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <div class="form-section">
+            <h3 class="section-title">
+              <i class="bi bi-people-fill"></i>
+              Guardian Details
+            </h3>
+            <br />
+
+            <div class="row g-4 container shadow border rounded-3 py-4">
+              <div class="col-md-6">
+                <label class="form-label"> Guardian's Full Name </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter guardian's name"
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label"> Guardian's Contact Number </label>
+
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Enter guardian's number"
+                />
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <div class="form-section">
+            <h3 class="section-title">
+              <i class="bi bi-chat-left-text-fill"></i>
+              Additional Information
+            </h3>
+            <br />
+            <div class="row g-4 container shadow border rounded-3">
+              <div class="col-md-6 p-2">
+                <label class="form-label"> How did you hear about us? </label>
+
+                <select class="form-select">
+                  <option selected disabled>Choose an option</option>
+
+                  <option>Friends</option>
+                  <option>Online Ad</option>
+                  <option>Newspaper</option>
+                  <option>Social Media</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="col-12 p-2">
+                <label class="form-label"> Special Requirements </label>
+
+                <textarea
+                  class="form-control p-2"
+                  rows="4"
+                  placeholder="Mention any special requirements..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <button class="btn btn-submit container border">
+              <i class="bi bi-send-fill"></i>
+              Submit Registration
+            </button>
+          </div>
         </div>
-        </div>
-        
+      </div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
-             
